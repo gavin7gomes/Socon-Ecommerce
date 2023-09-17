@@ -1,0 +1,169 @@
+.navigation-layout {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+    height: calc(100vh - 110px);
+    overflow: auto;
+    box-sizing: border-box;
+  }
+  
+  .toggle-menu-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    outline: none;
+  }
+
+  .navigation-content-wrapper{
+    width: 100%;
+  }
+  
+  
+
+  /* NavigationMenu */
+.navigationMenu {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    width: 250px;
+  }
+  
+  .navigationMenu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .navigationMenu li {
+    margin-bottom: 10px;
+  }
+  
+  .navigationMenu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .navigationMenu a.active {
+    font-weight: bold;
+  }
+
+  .comingSoon {
+    font-size: 12px;
+    color: #999;
+    margin-left: 8px;
+  }
+  
+  .disabledLink {
+    opacity: 0.7;
+    pointer-events: none;
+    text-decoration: none;
+  }
+
+  /* UserMenu.css */
+
+.user-menu {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-info {
+  flex-grow: 1;
+}
+
+.user-name {
+  margin: 0;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.user-email {
+  margin: 0;
+  font-size: 10px;
+  color: #d9d9d9;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 12px;
+}
+
+.user-bio,
+.user-company {
+  margin: 0;
+  font-size: 12px;
+  color: #878787;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 16px;
+}
+
+.logout-button {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  margin: 10px 20px;
+}
+
+.logout-button:hover {
+  background-color: #c9302c;
+}
+
+.navigationHeader{
+  width: 100%;
+  height: 54px;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #9a9a9a;
+  font-size: 24px;
+}
+
+.wishlistBtn{
+  font-size: 24px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.menuHeartContainer{
+  position: absolute;
+  width: 54px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-left: 12px;
+  color: white;
+}
+
+@media (max-width: 448px) {
+  .navigationHeader {
+    font-size: 16px;
+    font-weight: bold;
+  }
+}

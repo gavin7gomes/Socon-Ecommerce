@@ -1,0 +1,15 @@
+.productPageContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.productCardContainer{
+    width: 330px;
+    margin-right: 20px;
+}
+
+@media (max-width: 420px) {
+    .productCardContainer {
+      margin-right: 0;
+    }
+  }

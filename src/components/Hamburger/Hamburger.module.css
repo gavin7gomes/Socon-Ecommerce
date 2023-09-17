@@ -1,0 +1,17 @@
+.hamburger-icon,
+.cross-icon {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cross-icon {
+  transform: rotate(90deg);
+}
+
+.hamburger-icon:not(.cross-icon):hover {
+  cursor: pointer;
+}

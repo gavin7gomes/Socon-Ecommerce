@@ -1,0 +1,128 @@
+.productCard {
+    display: flex;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  .productCard:hover {
+    transform: scale(1.01);
+  }
+  
+  .thumbnail {
+    display: flex;
+    overflow: hidden;
+    max-width: 120px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+  
+    .thumbnailImg {
+      width: 100%;
+      height: auto;
+      max-width: none;
+      display: block;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  }
+  
+  .details {
+    flex: 2;
+    padding: 6px;
+    position: relative;
+  }
+  
+  .title {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 21px;
+    cursor: pointer;
+  }
+  
+  .brand {
+    color: #888;
+    margin: 4px 0;
+    font-size: 12px;
+  }
+  
+  .description {
+    margin-top: 5px;
+    color: #333;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 21px;
+    font-size: 12px;
+  }
+  
+  .price {
+    margin: 12px 0;
+    .discountedPrice {
+      font-size: 20px;
+      font-weight: 600;
+      color: #f44336;
+    }
+    .originalPrice {
+      font-size: 16px;
+      color: #888;
+      text-decoration: line-through;
+      margin-left: 8px;
+    }
+  }
+  
+  .stock {
+    font-size: 12px;
+    color: #888;
+    margin-top: 8px;
+  }
+  
+  /* ProductCard.module.css */
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  
+    .star {
+      color: #f44336;
+      font-size: 18px;
+    }
+  
+    .starFilled {
+      color: #f44336;
+      font-size: 18px;
+      animation: starPulse 0.5s alternate infinite;
+    }
+  }
+
+  .heart{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 22px;
+    color: magenta;
+    cursor: pointer;
+  }
+  
+
+  @keyframes starPulse {
+    0% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  

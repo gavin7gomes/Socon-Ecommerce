@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <circle cx="25" cy="25" r="20" fill="none" strokeWidth="4" stroke="#0073e6" opacity="0.3" />
+  <circle cx="25" cy="25" r="20" fill="none" strokeWidth="4" stroke="#0073e6">
+    <animate attributeName="stroke-dasharray" attributeType="XML" from="1,200" to="200,0" dur="5.5s" begin="0s" repeatCount="indefinite" />
+    <animate attributeName="stroke-dashoffset" attributeType="XML" from="0" to="-400" dur="5.5s" begin="0s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="25" cy="25" r="15" fill="none" strokeWidth="4" stroke="#0073e6" opacity="0.3" />
+  <circle cx="25" cy="25" r="15" fill="none" strokeWidth="4" stroke="#0073e6">
+    <animate attributeName="stroke-dasharray" attributeType="XML" from="1,200" to="200,0" dur="5.5s" begin="0" repeatCount="indefinite" />
+    <animate attributeName="stroke-dashoffset" attributeType="XML" from="0" to="-400" dur="5.5s" begin="0" repeatCount="indefinite" />
+  </circle>
+  <circle cx="25" cy="25" r="10" fill="none" strokeWidth="4" stroke="#0073e6" opacity="0.3" />
+  <circle cx="25" cy="25" r="10" fill="none" strokeWidth="4" stroke="#0073e6">
+    <animate attributeName="stroke-dasharray" attributeType="XML" from="1,200" to="200,0" dur="5.5s" begin="0" repeatCount="indefinite" />
+    <animate attributeName="stroke-dashoffset" attributeType="XML" from="0" to="-400" dur="5.5s" begin="0" repeatCount="indefinite" />
+  </circle>
+</svg>
