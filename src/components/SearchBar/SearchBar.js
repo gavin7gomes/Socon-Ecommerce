@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './SearchBar.module.css';
 import { ReactComponent as SearchIcon } from "../../assets/icons/search.svg";
-import { isMobileBrowser } from '../../utils/misc';
 
 function SearchBar({ searchParams, onSearchQueryChange, onSearch, products }) {
 

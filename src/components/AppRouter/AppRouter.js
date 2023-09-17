@@ -15,7 +15,7 @@ const AppRouter = () => {
       type: SET_WISHLIST,
       payload: wishlist
     })
-  }, [])
+  }, [dispatch])
   
   const Loader = () => (
     <div style={style.loaderContainer}>
