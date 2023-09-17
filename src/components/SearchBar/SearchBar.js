@@ -5,7 +5,7 @@ import { ReactComponent as SearchIcon } from "../../assets/icons/search.svg";
 function SearchBar({ searchParams, onSearchQueryChange, onSearch, products }) {
 
   const handleKeyPress = (e) => {
-    if (e.key === 'Enter' || e.key === 'Return') {
+    if (e.key === 'Enter' || e.key === 'Return' || e.key === 'Next' || e.key === "Go" || e.key === "Search") {
       onSearch();
     }
   };
@@ -14,7 +14,7 @@ function SearchBar({ searchParams, onSearchQueryChange, onSearch, products }) {
     <div className={styles['search-bar-container']}>
       <SearchIcon />
       <input
-        type="text"
+        type="search"
         placeholder="Search products..."
         className={styles['search-input']}
         value={searchParams.query}
