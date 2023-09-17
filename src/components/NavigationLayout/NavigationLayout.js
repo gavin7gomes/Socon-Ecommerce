@@ -3,18 +3,15 @@ import NavigationMenu from './NavigationMenu';
 import styles from './NavigationLayout.module.css';
 import HamburgerIcon from '../Hamburger/Hamburger';
 import SearchBar from '../SearchBar/SearchBar';
-import UserAvatar from '../UserAvatar/UserAvatar';
 import { useDispatch, useSelector } from 'react-redux';
-import { resetAuthData } from '../../store/actions/authActions';
 import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai';
 import { searchProducts, sortByProperty } from '../../store/actions/productActions';
 import { isMobileBrowser } from '../../utils/misc';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 const NavigationLayout = React.forwardRef(({ children, onWishListClick, updatePaginationDataCB }, ref) => {
   const dispatch = useDispatch();
   const location = useLocation();
-  const navigate = useNavigate();
 
   const [menuVisible, setMenuVisible] = useState(false);
   const [sortOption, setSortOption] = useState("title");
